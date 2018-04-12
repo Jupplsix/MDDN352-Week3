@@ -31,6 +31,6 @@ window.addEventListener('deviceorientation', function(event){
 
 	// tiltElement.style.height = tiltAdjust + "px";
 
-	text1.textContent = YAngle;
+	text1.textContent = "stuff";
 	// text2.textContent = tiltAdjust;
 });
