@@ -5,16 +5,10 @@
 
 #fullscreenCover {
 	width: 100%;
-	background-color: lightpink;
+	background-color: black;
 }
 
 #tilt {
 	width: 100%;
-	background-color: orange;
-}
-
-h1 {
-	position: absolute;
-	text-align: center;
-	width: 100%;
+	background-color: white;
 }
