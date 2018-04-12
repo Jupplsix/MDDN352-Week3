@@ -1,0 +1,20 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+#fullscreenCover {
+	width: 100%;
+	background-color: lightpink;
+}
+
+#tilt {
+	width: 100%;
+	background-color: orange;
+}
+
+h1 {
+	position: absolute;
+	text-align: center;
+	width: 100%;
+}
