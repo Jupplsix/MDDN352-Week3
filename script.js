@@ -25,7 +25,7 @@ window.addEventListener('load', resizePageLoad);
 window.addEventListener('deviceorientation', function(event){
 
 	var YAngle = event.beta;
-	tiltAdjust = map(YAngle, 45, 135, 0, displayHeight);
+	tiltAdjust = map(YAngle, 45, 135, 0, displayHeight/2);
 
 	tiltElement.style.height = tiltAdjust + "px";
 
