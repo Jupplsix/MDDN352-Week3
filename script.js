@@ -27,10 +27,10 @@ window.addEventListener('load', resizePageLoad);
 window.addEventListener('deviceorientation', function(event){
 
 	var YAngle = event.beta;
-	tiltAdjust = map(YAngle, 45, 135, 0, displayHeight/2);
+	// tiltAdjust = map(YAngle, 45, 135, 0, displayHeight/2);
 
-	tiltElement.style.height = tiltAdjust + "px";
+	// tiltElement.style.height = tiltAdjust + "px";
 
 	text1.textContent = YAngle;
-	text2.textContent = tiltAdjust;
+	// text2.textContent = tiltAdjust;
 });
