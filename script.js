@@ -6,6 +6,8 @@ var page = document.querySelector("#fullscreenCover");
 
 var tiltElement = document.querySelector("#tilt");
 
+var text = document.querySelector("#text1").textContent;
+var text2 = document.querySelector("#text2").textContent;
 
 // Setup Required Variables
 
@@ -29,4 +31,6 @@ window.addEventListener('deviceorientation', function(event){
 
 	tiltElement.style.height = tiltAdjust + "px";
 
+	text1.textContent = YAngle;
+	text2.textContent = tiltAdjust;
 });

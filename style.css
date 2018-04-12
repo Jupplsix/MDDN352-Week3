@@ -12,3 +12,12 @@
 	width: 100%;
 	background-color: white;
 }
+
+h1 {
+	position: absolute;
+	color: pink;
+}
+
+#text2 {
+	margin-top: 50px;
+}
