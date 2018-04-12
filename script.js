@@ -28,6 +28,6 @@ window.addEventListener('deviceorientation', function(event){
 	heightDisplay = map(height, 45, 135, 0, displayHeight);
 
 	heightDisplay = heightDisplay + "px";
-	tiltElement.style.height = height;
+	tiltElement.style.height = heightDisplay;
 
 });
