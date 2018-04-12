@@ -6,8 +6,8 @@ var page = document.querySelector("#fullscreenCover");
 
 var tiltElement = document.querySelector("#tilt");
 
-var text = document.querySelector("#text1").textContent;
-var text2 = document.querySelector("#text2").textContent;
+var text1 = document.querySelector("#text1");
+var text2 = document.querySelector("#text2");
 
 // Setup Required Variables
 

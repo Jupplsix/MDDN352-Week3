@@ -13,11 +13,7 @@
 	background-color: white;
 }
 
-h1 {
+#textArea {
 	position: absolute;
 	color: pink;
-}
-
-#text2 {
-	margin-top: 50px;
 }
