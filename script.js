@@ -34,7 +34,7 @@ window.addEventListener('deviceorientation', function(event){
 	ball.style.marginTop = YAngle*8 + "px";
 	ball.style.marginLeft = XAngle*8 + "px";
 
-	if((XAngle < 0.3 && XAngle > -0.3) && (YAngle < 0.3 && YAngle > -0.3)) {
+	if((XAngle < 1.0 && XAngle > -1.0) && (YAngle < 1.0 && YAngle > -1.0)) {
 		ball.style.height = displayHeight/3.5 + "px";
 		ball.style.width = displayHeight/3.5 + "px";
 		ball.style.backgroundColor = "lightgreen";
