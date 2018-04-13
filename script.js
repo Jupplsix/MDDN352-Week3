@@ -39,6 +39,11 @@ window.addEventListener('deviceorientation', function(event){
 		ball.style.width = displayHeight/3.5 + "px";
 		ball.style.backgroundColor = "lightgreen";
 		center.style.backgroundColor = "white";
+	} else {
+		ball.style.height = displayHeight/4 + "px";
+		ball.style.width = displayHeight/4 + "px";
+		ball.style.backgroundColor = "white";
+		center.style.backgroundColor = "black";
 	}
 
 });
