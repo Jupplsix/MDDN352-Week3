@@ -21,13 +21,10 @@ function resizePageLoad() {
 window.addEventListener('load', resizePageLoad);
 
 
-// window.addEventListener('deviceorientation', function(event){
+window.addEventListener('deviceorientation', function(event){
 
-// 	var YAngle = event.beta;
-// 	// tiltAdjust = map(YAngle, 45, 135, 0, displayHeight/2);
+	var YAngle = event.beta;
+	tiltAdjust = map(YAngle, 0, 180, 0, displayHeight);
 
-// 	// tiltElement.style.height = tiltAdjust + "px";
-
-// 	text1.textContent = "stuff";
-// 	// text2.textContent = tiltAdjust;
-// });
+	tiltElement.style.height = tiltAdjust + "px";
+});
