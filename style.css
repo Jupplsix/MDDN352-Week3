@@ -4,11 +4,14 @@
 }
 
 #fullscreenCover {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	width: 100%;
 	background-color: black;
 }
 
-#tiltProgress {
-	width: 100%;
+#ball {
+	border-radius: 100%;
 	background-color: white;
 }
