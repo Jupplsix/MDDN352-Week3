@@ -33,17 +33,12 @@ window.addEventListener('deviceorientation', function(event){
 
 	ball.style.marginTop = YAngle*8 + "px";
 	ball.style.marginLeft = XAngle*8 + "px";
-
-	if((XAngle < 1.0 && XAngle > -1.0) && (YAngle < 1.0 && YAngle > -1.0)) {
-		ball.style.height = displayHeight/3.5 + "px";
-		ball.style.width = displayHeight/3.5 + "px";
-		ball.style.backgroundColor = "lightgreen";
-		center.style.backgroundColor = "white";
-	} else {
-		ball.style.height = displayHeight/4 + "px";
-		ball.style.width = displayHeight/4 + "px";
-		ball.style.backgroundColor = "white";
-		center.style.backgroundColor = "black";
-	}
-
 });
+
+if((XAngle < 2.5 && XAngle > -2.5) && (YAngle < 2.5 && YAngle > -2.5)) {
+	ball.style.backgroundColor = "#f46e42";
+	page.style.backgroundColor = "white";
+} else {
+	ball.style.backgroundColor = "white";
+	page.style.backgroundColor = "black";
+}
