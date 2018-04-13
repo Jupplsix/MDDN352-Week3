@@ -26,5 +26,5 @@ window.addEventListener('deviceorientation', function(event){
 	var YAngle = event.beta;
 	tiltAdjust = map(YAngle, 0, 180, 0, displayHeight);
 
-	tiltElement.style.height = tiltAdjust + "px";
+	tiltElement.style.height = YAngle + "px";
 });
