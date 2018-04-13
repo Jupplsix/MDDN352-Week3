@@ -37,8 +37,12 @@ window.addEventListener('deviceorientation', function(event){
 	if((XAngle < 2.5 && XAngle > -2.5) && (YAngle < 2.5 && YAngle > -2.5)) {
 		ball.style.backgroundColor = "#f46e42";
 		page.style.backgroundColor = "white";
+		center.style.backgroundColor = "white";
+		center.style.borderColor = "#f46e42";
 	} else {
 		ball.style.backgroundColor = "white";
 		page.style.backgroundColor = "black";
+		center.style.backgroundColor = "black";
+		center.style.borderColor = "white";
 	}
 });
