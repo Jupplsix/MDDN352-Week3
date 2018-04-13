@@ -28,6 +28,6 @@ window.addEventListener('deviceorientation', function(event){
 	var XAngle = event.gamma;
 	var YAngle = event.beta;
 
-	ball.style.marginTop = YAngle*2 + "px";
-	ball.style.marginLeft = XAngle*2 + "px";
+	ball.style.marginTop = YAngle*5 + "px";
+	ball.style.marginLeft = XAngle*5 + "px";
 });
