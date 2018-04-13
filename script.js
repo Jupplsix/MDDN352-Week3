@@ -34,15 +34,15 @@ window.addEventListener('deviceorientation', function(event){
 	ball.style.marginTop = YAngle*8 + "px";
 	ball.style.marginLeft = XAngle*8 + "px";
 
-	if((XAngle < 2.5 && XAngle > -2.5) && (YAngle < 2.5 && YAngle > -2.5)) {
+	if((XAngle < 1.5 && XAngle > -1.5) && (YAngle < 1.5 && YAngle > -1.5)) {
 		ball.style.backgroundColor = "#f46e42";
 		page.style.backgroundColor = "white";
 		center.style.backgroundColor = "white";
-		center.style.borderColor = "#f46e42";
+		center.style.borderWidth = "0px";
 	} else {
 		ball.style.backgroundColor = "white";
 		page.style.backgroundColor = "black";
 		center.style.backgroundColor = "black";
-		center.style.borderColor = "white";
+		center.style.borderWidth = "3px";
 	}
 });
