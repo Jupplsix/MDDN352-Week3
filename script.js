@@ -3,11 +3,7 @@
 // Get Required Elements from HTML
 
 var page = document.querySelector("#fullscreenCover");
-
-var tiltElement = document.querySelector("#tilt");
-
-var text1 = document.querySelector("#text1");
-var text2 = document.querySelector("#text2");
+var tiltElement = document.querySelector("#tiltProgress");
 
 // Setup Required Variables
 
@@ -24,13 +20,14 @@ function resizePageLoad() {
 
 window.addEventListener('load', resizePageLoad);
 
-window.addEventListener('deviceorientation', function(event){
 
-	var YAngle = event.beta;
-	// tiltAdjust = map(YAngle, 45, 135, 0, displayHeight/2);
+// window.addEventListener('deviceorientation', function(event){
 
-	// tiltElement.style.height = tiltAdjust + "px";
+// 	var YAngle = event.beta;
+// 	// tiltAdjust = map(YAngle, 45, 135, 0, displayHeight/2);
 
-	text1.textContent = "stuff";
-	// text2.textContent = tiltAdjust;
-});
+// 	// tiltElement.style.height = tiltAdjust + "px";
+
+// 	text1.textContent = "stuff";
+// 	// text2.textContent = tiltAdjust;
+// });

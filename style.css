@@ -8,12 +8,7 @@
 	background-color: black;
 }
 
-#tilt {
+#tiltProgress {
 	width: 100%;
 	background-color: white;
-}
-
-#textArea {
-	position: absolute;
-	color: pink;
 }
