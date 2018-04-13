@@ -8,9 +8,6 @@ var center = document.querySelector("#center");
 
 var displayHeight;
 
-var XAngle;
-var YAngle;
-
 // Resize Page to Fit Screen
 
 function resizePageLoad() {
@@ -31,17 +28,17 @@ window.addEventListener('load', resizePageLoad);
 
 window.addEventListener('deviceorientation', function(event){
 
-	XAngle = event.gamma;
-	YAngle = event.beta;
+	var XAngle = event.gamma;
+	var YAngle = event.beta;
 
 	ball.style.marginTop = YAngle*8 + "px";
 	ball.style.marginLeft = XAngle*8 + "px";
-});
 
-if((XAngle < 2.5 && XAngle > -2.5) && (YAngle < 2.5 && YAngle > -2.5)) {
-	ball.style.backgroundColor = "#f46e42";
-	page.style.backgroundColor = "white";
-} else {
-	ball.style.backgroundColor = "white";
-	page.style.backgroundColor = "black";
-}
+	if((XAngle < 2.5 && XAngle > -2.5) && (YAngle < 2.5 && YAngle > -2.5)) {
+		ball.style.backgroundColor = "#f46e42";
+		page.style.backgroundColor = "white";
+	} else {
+		ball.style.backgroundColor = "white";
+		page.style.backgroundColor = "black";
+	}
+});

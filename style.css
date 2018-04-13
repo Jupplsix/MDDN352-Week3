@@ -15,7 +15,7 @@
 #ball {
 	border-radius: 100%;
 	background-color: white;
-	transition: all ease 1.0s;
+	transition: background-color ease 1.0s;
 }
 
 #center {
