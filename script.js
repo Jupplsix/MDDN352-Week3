@@ -2,6 +2,7 @@
 
 var page = document.querySelector("#fullscreenCover");
 var ball = document.querySelector("#ball");
+var center = document.querySelector("#center");
 
 // Setup Required Variables
 
@@ -12,8 +13,11 @@ var displayHeight;
 function resizePageLoad() {
 	displayHeight = window.innerHeight;
 
-	ball.style.height = displayHeight/5 + "px";
-	ball.style.width = displayHeight/5 + "px";
+	ball.style.height = displayHeight/4 + "px";
+	ball.style.width = displayHeight/4 + "px";
+
+	center.style.height = displayHeight/4 + "px";
+	center.style.width = displayHeight/4 + "px";
 
 	page.style.height = displayHeight + "px";
 }
@@ -28,6 +32,6 @@ window.addEventListener('deviceorientation', function(event){
 	var XAngle = event.gamma;
 	var YAngle = event.beta;
 
-	ball.style.marginTop = YAngle*5 + "px";
-	ball.style.marginLeft = XAngle*5 + "px";
+	ball.style.marginTop = YAngle*8 + "px";
+	ball.style.marginLeft = XAngle*8 + "px";
 });
