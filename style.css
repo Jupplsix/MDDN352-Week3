@@ -9,13 +9,13 @@
 	align-items: center;
 	width: 100%;
 	background-color: black;
+	transition: all ease 0.2s;
 }
 
 #ball {
 	border-radius: 100%;
 	background-color: white;
-	margin-left: 100px;
-	margin-top: 100px;
+	transition: all ease 0.2s;
 }
 
 #center {

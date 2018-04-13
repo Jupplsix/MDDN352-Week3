@@ -28,10 +28,17 @@ window.addEventListener('load', resizePageLoad);
 
 window.addEventListener('deviceorientation', function(event){
 
-
 	var XAngle = event.gamma;
 	var YAngle = event.beta;
 
 	ball.style.marginTop = YAngle*8 + "px";
 	ball.style.marginLeft = XAngle*8 + "px";
+
+	if((XAngle < 0.3 && XAngle > -0.3) && (YAngle < 0.3 && YAngle > -0.3)) {
+		ball.style.height = displayHeight/3.5 + "px";
+		ball.style.width = displayHeight/3.5 + "px";
+		ball.style.backgroundColor = "lightgreen";
+		center.style.backgroundColor = "white";
+	}
+
 });
