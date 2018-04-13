@@ -20,7 +20,7 @@ window.addEventListener('deviceorientation', function(event){
 	var height = event.beta;
 
 	// tiltAdjust = map(height, 0, 180, 0, displayHeight);
-	tiltAdjust = (height-0)/(180-0) * (displayHeight-0) + 0;
+	tiltAdjust = (height-0)/(180-0) * ((window.innerHeight)-0) + 0;
 
 	tiltAdjust = tiltAdjust + "px";
 
