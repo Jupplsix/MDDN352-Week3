@@ -8,6 +8,9 @@ var center = document.querySelector("#center");
 
 var displayHeight;
 
+var XAngle;
+var YAngle;
+
 // Resize Page to Fit Screen
 
 function resizePageLoad() {
@@ -28,8 +31,8 @@ window.addEventListener('load', resizePageLoad);
 
 window.addEventListener('deviceorientation', function(event){
 
-	var XAngle = event.gamma;
-	var YAngle = event.beta;
+	XAngle = event.gamma;
+	YAngle = event.beta;
 
 	ball.style.marginTop = YAngle*8 + "px";
 	ball.style.marginLeft = XAngle*8 + "px";
